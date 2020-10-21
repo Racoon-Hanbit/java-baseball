@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class NumbermakerTest {
+public class NumberMakerTest {
 
     @Test
     public void makeRandomNumber(){
