@@ -1,25 +1,35 @@
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class OpponentPlayer {
 
-    HashSet<Integer> randomNumbers;
+    private LinkedHashSet<Integer> randomNumbers;
 
     public OpponentPlayer(){
-        randomNumbers = new HashSet<>();
+        randomNumbers = new LinkedHashSet<>();
     }
 
-    public void makeRandomNumbers(){
+    public String makeRandomNumbers(){
         while(randomNumbers.size() < 3){
             int randomNumber = (int) (Math.random() * 10);
+            System.out.println(randomNumber + " ");
             randomNumbers.add(getCorrectRangeNumber(randomNumber)); // 1 - 9
         }
+        return getRandomNumbers();
     }
 
-    public int getCorrectRangeNumber(int randomNumber){
-        while(randomNumber != 0){
+    private int getCorrectRangeNumber(int randomNumber){
+        while(randomNumber == 0){
             randomNumber = (int) (Math.random() * 10);
         }
         return randomNumber;
+    }
+
+    private String getRandomNumbers(){
+        StringBuffer numbers = new StringBuffer();
+        for(Integer number : randomNumbers){
+            numbers.append(number);
+        }
+        return numbers.toString();
     }
 
 }
