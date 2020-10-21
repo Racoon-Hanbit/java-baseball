@@ -11,8 +11,7 @@ public class OpponentPlayer {
     public String makeRandomNumbers(){
         while(randomNumbers.size() < 3){
             int randomNumber = (int) (Math.random() * 10);
-            System.out.println(randomNumber + " ");
-            randomNumbers.add(getCorrectRangeNumber(randomNumber)); // 1 - 9
+            randomNumbers.add(getCorrectRangeNumber(randomNumber));
         }
         return getRandomNumbers();
     }

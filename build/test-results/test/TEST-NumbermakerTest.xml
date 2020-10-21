@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NumbermakerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-21T07:37:40" hostname="DavinciJ-PC" time="0.012">
+  <properties/>
+  <testcase name="makeRandomNumber" classname="NumbermakerTest" time="0.012"/>
+  <system-out><![CDATA[8 
+0 
+0 
+makedNumbers: 872
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
