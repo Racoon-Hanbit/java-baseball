@@ -1,4 +1,7 @@
+package com.davinci;
+
 import org.junit.Test;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -9,7 +12,6 @@ public class ChallengerSelectedNumberTest {
     @Test
     public void selectChallengerNumber() throws Exception{
         String input = "12@";
-        Challenger challenger = new Challenger(input);
-        System.out.println(challenger.getChallengerSelectedNumber());
+        System.out.println(Challenger.getChallengerSelectedNumber(input));
     }
 }

@@ -1,3 +1,5 @@
+package com.davinci;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -35,8 +37,7 @@ public class Main {
         return result.equals("3strike");
     }
 
-    private static int endOrReStartGame(int restart, int end)
-                                    throws Exception{
+    private static int endOrReStartGame(int restart, int end) throws Exception{
         while(true){
             String input = br.readLine();
             if(isCorrectNumber(input, restart, end)) {

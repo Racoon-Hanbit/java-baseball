@@ -1,3 +1,5 @@
+package com.davinci;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,6 +11,7 @@ public class ComparatorTest {
         String opponentNumbers = "148";
         String challengerNumbers = "287";
         String expectedResultValue = "1ball";
+        System.out.println("한글 출력 깨짐");
 
         //WHEN - 실제 로직 수행
         String actualResultValue = Comparator.compareNumbers(opponentNumbers, challengerNumbers);
@@ -36,7 +39,7 @@ public class ComparatorTest {
         //GIVEN - 테스트케이스, 결과기댓값 준비
         String opponentNumbers = "348";
         String challengerNumbers = "297";
-        String expectedResultValue = "out";
+        String expectedResultValue = "FourBall";
 
         //WHEN - 실제 로직 수행
         String actualResultValue = Comparator.compareNumbers(opponentNumbers, challengerNumbers);
